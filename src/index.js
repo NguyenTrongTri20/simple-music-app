@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MusicListContext from './Context/MusicListContext'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MusicListContext>
+      <App />
+    </MusicListContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
